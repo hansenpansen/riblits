@@ -1,7 +1,5 @@
-# encoding: utf-8
-class MyApp < Sinatra::Application
+class MyApp < Sinatra::Base
 	get "/" do
-		@title = "Welcome to MyApp"				
-		haml :main
+		slim :index
 	end
 end
